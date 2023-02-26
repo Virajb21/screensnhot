@@ -1,0 +1,46 @@
+lab-13@blab13-OptiPlex-5060:~$ git config --global user.name "Virajb21"
+blab-13@blab13-OptiPlex-5060:~$ git config --global user.email "viraj.bhukte@yahoo.com"
+blab-13@blab13-OptiPlex-5060:~$ 
+blab-13@blab13-OptiPlex-5060:~$ cd myy
+blab-13@blab13-OptiPlex-5060:~/myy$ git add index.html
+fatal: pathspec 'index.html' did not match any files
+blab-13@blab13-OptiPlex-5060:~/myy$ git add index.html
+blab-13@blab13-OptiPlex-5060:~/myy$ git add --all
+blab-13@blab13-OptiPlex-5060:~/myy$ git commit -m"First release of hello World!"
+[master (root-commit) ccd05d1] First release of hello World!
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+blab-13@blab13-OptiPlex-5060:~/myy$ git commit -m"Updated index.html with a new line"
+On branch master
+nothing to commit, working tree clean
+blab-13@blab13-OptiPlex-5060:~/myy$ git log 
+commit ccd05d1063a95490cd8b274684e88764ff57deca (HEAD -> master)
+Author: Virajb21 <viraj.bhukte@yahoo.com>
+Date:   Sun Feb 26 14:53:56 2023 +0530
+
+    First release of hello World!
+blab-13@blab13-OptiPlex-5060:~/myy$ git branch hello-world-images
+blab-13@blab13-OptiPlex-5060:~/myy$ git checkout hello-world-images
+Switched to branch 'hello-world-images'
+blab-13@blab13-OptiPlex-5060:~/myy$ git add remote origin https://github.com/Virajb21/myy.git
+fatal: pathspec 'remote' did not match any files
+blab-13@blab13-OptiPlex-5060:~/myy$ git remote add origin https://github.com/Virajb21/myy.git
+blab-13@blab13-OptiPlex-5060:~/myy$ git push --set-upstream origin master
+Username for 'https://github.com': Virajb21
+Password for 'https://Virajb21@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Virajb21/myy.git/'
+blab-13@blab13-OptiPlex-5060:~/myy$ git fetch origin
+blab-13@blab13-OptiPlex-5060:~/myy$ git merge origin/master
+merge: origin/master - not something we can merge
+blab-13@blab13-OptiPlex-5060:~/myy$ git merge origin
+merge: origin - not something we can merge
+blab-13@blab13-OptiPlex-5060:~/myy$ git merge master
+Already up to date.
+blab-13@blab13-OptiPlex-5060:~/myy$ git pull origin
+You asked to pull from the remote 'origin', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+blab-13@blab13-OptiPlex-5060:~/myy$ 
+
